@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamus Gaul - Bahasa Anak Muda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">Gaul<span>pedia.</span></a>
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#kamus">Kamus</a>
+            <a href="#tentang">Tentang</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="beranda">
+        <div class="hero-content">
+            <p class="label">KAMUS BAHASA ANAK MUDA</p>
+            <h1>Biar Nggak <span>FOMO</span>,<br>Yuk Kenali Bahasa Gaul!</h1>
+            <p class="subtitle">
+                Temukan arti kata-kata gaul yang sering digunakan
+                anak muda dalam percakapan sehari-hari.
+            </p>
+
+            <div class="search-box">
+                <input type="text" id="searchInput"
+placeholder="Search slang words, e.g. Rizz, Slay...">
+                <button onclick="cariKata()">Cari</button>
+            </div>
+
+            <button class="random-btn" onclick="kataAcak()">
+                🎲 Kasih aku kata acak
+            </button>
+        </div>
+
+        <div class="hero-emoji">💬</div>
+    </section>
+
+    <main id="kamus">
+        <section class="section-heading">
+            <p class="label">GAUL DI SINI, GAUL DI MANA SAJA</p>
+            <h2>Kamus Bahasa Gaul</h2>
+            <p>Geser wawasanmu, pahami bahasa tongkronganmu.</p>
+        </section>
+
+<div class="filters">
+    <button class="filter active" data-kategori="All">All</button>
+    <button class="filter" data-kategori="Abbreviations">Abbreviations</button>
+    <button class="filter" data-kategori="Expressions">Expressions</button>
+    <button class="filter" data-kategori="Relationships">Relationships</button>
+    <button class="filter" data-kategori="Social Media">Social Media</button>
+    <button class="filter" data-kategori="Lifestyle">Lifestyle</button>
+</div>
+
+        <div id="hasilInfo"></div>
+        <div class="kamus-grid" id="kamusGrid"></div>
+    </main>
+
+    <section class="about" id="tentang">
+        <h2>Bahasa Gaul, Biar Makin Nyambung!</h2>
+        <p>
+            Gaulpedia adalah kamus sederhana untuk mengenal berbagai
+            istilah gaul yang sering muncul di media sosial dan
+            percakapan anak muda. Arti kata dapat berbeda sesuai konteks.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Gaulpedia. Dibuat untuk seru-seruan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
